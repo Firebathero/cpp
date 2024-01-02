@@ -29,7 +29,7 @@ int main() {
         int before_wins = std::max(hooves[i], std::max(paper[i], scissors[i]));
         int after_wins = std::max(hooves[n] - hooves[i],
                          std::max(paper[n] - paper[i],
-                             scissors[n] - scissors[i]));
+                             tscissors[n] - scissors[i]));
         max_wins = std::max(max_wins, before_wins + after_wins);
     }
 
